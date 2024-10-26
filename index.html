@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="date.css">
+    <title>Website</title>
+</head>
+<body class="flex">
+    <div class="container">
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    <div class="date_time">
+                        <p id="day"></p>
+                        <p id="date_year"></p>
+                        <p id="time"></p>
+                    </div>
+                </td>
+                <td>
+                    <div class="image_box">
+                        <img src="images-4/us-flag.jpg" alt="Flag" id="image">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="" class="flex">
+                        <fieldset>
+                            <legend>Format</legend>
+                            <div class="radio">
+                                <p><input type="radio" name="radio" id="country_Us">US <br></p>
+                                <p><input type="radio" name="radio" id="country_eur">European</p>
+                            </div>
+                        </fieldset>
+                    </form>
+                </td>
+                <td>
+                    <form action="" class="flex">
+                        <fieldset>
+                            <legend>Font Size</legend>
+                            <div class="radio">
+                                <p><input type="radio" name="radio_font_size" id="Medium">Medium <br></p>
+                                <p><input type="radio" name="radio_font_size" id="large">Large <br></p>
+                                <p><input type="radio" name="radio_font_size" id="x_large">x-Large</p>
+                            </div>
+                        </fieldset>
+                    </form>
+                </td>
+                <td>
+                    <form action="" class="flex">
+                        <fieldset>
+                            <legend>Flag</legend>
+                            <div class="radio">
+                                <p><input type="checkbox" name="" id="chk"><span id="show">Show </span></p>
+                            </div>
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="text_color combo_padding">
+                        <p>Text Color</p>
+                        <select name="text" id="color_value">
+                            <option value="Select Text color" selected disabled>Select Text color</option>
+                            <option value="White">White</option>
+                            <option value="Red">Red</option>
+                            <option value="Green">Green</option>
+                            <option value="Blue">Blue</option>
+                            <option value="brown">brown</option>
+                            <option value="black">black</option>
+                        </select>
+                    </div>
+                </td>
+                <td>
+                    <div class="text_color combo_padding">
+                        <p>Background Color</p>
+                        <select name="text" id="background_color">
+                            <option value="Select Text color" selected disabled>Select Background color</option>
+                            <option value="lightgrey">lightgrey</option>
+                            <option value="lightgreen">lightgreen</option>
+                            <option value="lightcoral">lightcoral</option>
+                            <option value="lightskyblue">lightskyblue</option>
+                            <option value="black">black</option>
+                        </select>
+                    </div>
+                </td>
+                <td>
+                    <div class="submit">
+                        <input type="button" value="Submit" onclick="apply()">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- JavaScript File-->
+    <script src="date.js"></script>
+</body>
+</html>
